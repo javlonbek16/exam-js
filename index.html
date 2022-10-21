@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="img/pizza-svgrepo-com.svg"
+              alt="logo-img"
+              width="70"
+              height="70"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="input-section">
+        <label> Noni qanday bo'lsin? </label>
+
+        <select name="module" id="module" onchange="ddselect();" class="class">
+          <option value="1">Yupqa</option>
+          <option value="2">O'rtacha</option>
+          <option value="3">Qalin</option>
+        </select>
+        <div class="dough">
+          <p class="non">Non:</p>
+          <input type="text" id="txtvalues" class="dough-name" />
+        </div>
+        <!--  -->
+      </section>
+      <section class="size-section">
+        <p class="wrapper-text">Kattaligi:</p>
+        <div class="container">
+          <div class="wrapper">
+            <button class="wrapper__link">
+              <div class="wraper">
+                <p class="wrapper__info">25 cm</p>
+              </div>
+            </button>
+            <button class="wrapper__link">
+              <div class="wraper">
+                <p class="wrapper__info">30 cm</p>
+              </div>
+            </button>
+            <button class="wrapper__link">
+              <div class="wraper">
+                <p class="wrapper__info">35 cm</p>
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="add">
+        <p class="text">Ustida:</p>
+        <div class="container">
+          <div class="add__wrapper">
+            <div class="ghj">
+              <!--  -->
+              <input
+                type="checkbox"
+                class="input"
+                id="myCheck"
+                onclick="myFunction()"
+              />
+              Pomidor
+              <p class="checkbox-info" id="text" style="display: none">
+                Pomidor
+              </p>
+              <!--  -->
+              <input
+                type="checkbox"
+                class="input"
+                id="myCheckmeat"
+                onclick="myFunctionMeat()"
+              />
+              Kurka go'shti
+              <p
+                class="checkbox-info-meat"
+                id="text-meat"
+                style="display: none"
+              >
+                Kurka go'shti
+              </p>
+            </div>
+            <div class="ghj">
+              <input
+                type="checkbox"
+                class="input"
+                id="myCheckZaytun"
+                onclick="myFunctionZaytun()"
+              />
+              Zaytun
+              <p
+                class="checkbox-info-zaytun"
+                id="text-zaytun"
+                style="display: none"
+              >
+                Zaytun
+              </p>
+              <!--  -->
+              <input
+                type="checkbox"
+                class="input"
+                id="myCheckCucumber"
+                onclick="myFunctionCucumber()"
+              />
+              Tuzlangan bodring
+              <p
+                class="checkbox-info-cucumber"
+                id="text-cucumber"
+                style="display: none"
+              >
+                Tuzlangan bodring
+              </p>
+            </div>
+            <div class="ghj">
+              <input
+                type="checkbox"
+                class="input"
+                id="myCheckMushroom"
+                onclick="myFunctionMushroom()"
+              />
+              Qo'ziqorin
+              <p
+                class="checkbox-info-mushroom"
+                id="text-mushroom"
+                style="display: none"
+              >
+                Qo'ziqorin
+              </p>
+              <!--  -->
+              <input
+                type="checkbox"
+                class="input"
+                id="myCheckGas"
+                onclick="myFunctionGas()"
+              />
+              Qazi
+              <p class="checkbox-info-gas" id="text-gas" style="display: none">
+                Qazi
+              </p>
+            </div>
+            <!--  -->
+            <!--  -->
+          </div>
+        </div>
+      </section>
+      <section class="additions">
+        <p class="txt">Qoshimcha:</p>
+        <div class="container">
+          <div class="additions__wrapper">
+            Achiq
+            <input
+              type="checkbox"
+              class="input"
+              id="myCheckSour"
+              onclick="myFunctionSour()"
+            />
+            <p class="checkbox-info-sour" id="text-sour" style="display: none">
+              Achiq
+            </p>
+
+            Sosiskali
+            <input
+              type="checkbox"
+              class="input"
+              id="myCheckSausage"
+              onclick="myFunctionSausage()"
+            />
+            <p
+              class="checkbox-info-sausage"
+              id="text-sausage"
+              style="display: none"
+            >
+              Sosiskali
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="container my-5">
+      <!-- Footer -->
+      <footer
+        class="text-center text-lg-start text-white"
+        style="background-color: #929fba"
+      >
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: Links -->
+          <section class="">
+            <!--Grid row-->
+            <div class="row">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">
+                  <a href="#">
+                    <img
+                      src="img/pizza-svgrepo-com.svg"
+                      alt="logo-img"
+                      width="170"
+                      height="170"
+                    />
+                  </a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                <p>
+                  <a class="text-white">Pizza</a>
+                </p>
+                <p>
+                  <a class="text-white">Hamburger</a>
+                </p>
+                <p>
+                  <a class="text-white">Hot-dog</a>
+                </p>
+                <p>
+                  <a class="text-white">Shaurma</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <hr class="w-100 clearfix d-md-none" />
+
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p><i class="fas fa-home mr-3"></i> Toshkent, UZB</p>
+                <p>
+                  <i class="fas fa-envelope mr-3"></i>
+                  javlonbeknematov0606@gmail.com
+                </p>
+                <p><i class="fas fa-phone mr-3"></i> +998903445021</p>
+                <p><i class="fas fa-print mr-3"></i> +998903445021</p>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                <!-- Facebook -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #3b5998"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #55acee"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #dd4b39"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #ac2bac"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+
+                <!-- Linkedin -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #0082ca"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <!-- Github -->
+                <a
+                  class="btn btn-primary btn-floating m-1"
+                  style="background-color: #333333"
+                  href="#!"
+                  role="button"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          <a
+            class="text-white"
+            href="https://t.me/nematov_javlon"
+            target="_blank"
+          >
+            coded by Nematov Javlon</a
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+    <!-- End of .container -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

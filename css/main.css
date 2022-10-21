@@ -1,0 +1,163 @@
+.wrapper__link {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  border: 1px solid black;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 30px;
+}
+
+.wrapper__info {
+  text-align: center;
+}
+.wrapper {
+  display: flex;
+}
+.line {
+    border: 1px solid black;
+    transform: rotate(90deg);
+    margin-left: 500px;
+}
+body {
+    margin: 0;
+    padding: 0 15px;
+}
+.dough {
+    margin-left: 1000px;
+    margin-top: -70px;
+    display: flex;
+}
+.dough-name {
+    margin-left: 10px;
+}
+.non {
+    margin-top: 15px;
+}
+.wrapper__link:active {
+   background-color: aqua;
+}
+.wrapper {
+    margin-bottom: 100px;
+}
+.wrapper-text {
+text-align: right;
+margin-right: 270px;
+}
+.site-header { 
+    position: relative;
+    z-index: 10;
+    background-color: aqua;
+    width: 100%;
+}
+.logo-img {
+    margin-left: 10px;
+}
+.nav__list{
+    list-style: none;
+    display: flex;
+    margin-left: 600px;
+}
+    .nav {
+    display: flex;
+}
+.nav__item {
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+.nav__link {
+    color: black;
+}
+.nav__link:hover {
+   color: yellow;
+}
+.container {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0 15px;
+}
+.class{
+    margin-top: 50px;
+}
+.dough-name{
+    border: none;
+}
+
+.additions__wrapper {
+    margin-top: 50px;
+}
+
+.checkbox-info {
+    margin-left: 500px;
+}
+.add {
+    position: relative;
+}
+.text {
+    position: absolute;
+    left: 1000px;
+    bottom: 230px;
+}
+
+.additions {
+    position: relative;
+}
+
+.checkbox-info-meat {
+    position: absolute;
+    left: 1000px;
+    bottom: 190px;
+}
+.checkbox-info {
+    position: absolute;
+    left: 500px;
+    bottom: 210px;
+}
+.checkbox-info-zaytun {
+    position: absolute;
+    left: 1000px;
+    bottom: 170px;
+}
+.checkbox-info-cucumber {
+    position: absolute;
+    left: 1000px;
+    bottom: 150px;
+}
+.checkbox-info-mushroom {
+    position: absolute;
+    left: 1000px;
+    bottom: 130px;
+}
+.checkbox-info-gas {
+    position: absolute;
+    left: 1000px;
+    bottom: 110px;
+}
+.txt {
+    position: absolute;
+    left: 1000px;
+    bottom: 100px;   
+}
+.checkbox-info-sour {
+    position: absolute;
+    left: 1000px;
+    bottom: 80px;
+}
+.checkbox-info-sausage  {
+    position: absolute;
+    left: 1000px;
+    bottom: 60px;
+}
+.ghj {
+    display: flex;
+    width: 300px;
+    align-items: center;
+}
+.input {
+    margin-right: 30px;
+    margin-left: 30px;
+}
